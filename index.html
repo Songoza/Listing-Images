@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paged Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="container mx-auto p-4">
+        <div id="page-1" class="page bg-white p-6 rounded-lg shadow-lg">
+            <h1 class="text-2xl font-bold mb-4">Page 1</h1>
+            <p>This is the content for the first page.</p>
+        </div>
+        <div id="page-2" class="page hidden bg-white p-6 rounded-lg shadow-lg">
+            <h1 class="text-2xl font-bold mb-4">Page 2</h1>
+            <p>This is the content for the second page.</p>
+        </div>
+        <div id="page-3" class="page hidden bg-white p-6 rounded-lg shadow-lg">
+            <h1 class="text-2xl font-bold mb-4">Page 3</h1>
+            <p>This is the content for the third page.</p>
+        </div>
+
+        <div class="mt-4 flex justify-between">
+            <button id="prev" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:bg-gray-400">Previous</button>
+            <button id="next" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:bg-gray-400">Next</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
